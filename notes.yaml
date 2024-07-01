@@ -1,0 +1,11 @@
+what are some ways you can render each card?:
+  - possibly using some event lister (the event listener variable will be export by each file) it when grab that variable and call back the function allowing the page to render
+  - possibly use a if statement or switch statement to pick up when a button is pressed redirecting the user to a different layout/component
+method 2:
+  - load the event listeners the same way
+  - instead export the init with functions that can be called in index.js which can control the navigation of layouts if a certain button is clicked
+
+
+how will you render the specific layouts?:
+  - separate javascript for each layout homeLayout , menuLayout , contactLayout
+  - appending html 
