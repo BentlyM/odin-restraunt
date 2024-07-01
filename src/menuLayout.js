@@ -1,19 +1,18 @@
-export const menuComponent = () => {
-    console.log('you reached me');
-    const homeBtn = document.getElementById('menu')
+export const MenuComponent = () => {
+    const menuBtn = document.getElementById('menu')
 
-    const homeLayout = document.createElement('div');
-    homeLayout.classList.add('homeContainer');
+    const menuLayout = document.createElement('div');
+    menuLayout.classList.add('menuContainer');
 
     const text = document.createElement('span');
-    text.textContent = 'test1';
+    text.textContent = 'MenuLayout';
     
 
-    homeLayout.appendChild(text);
+    menuLayout.appendChild(text);
 
     return {
-        homeBtn,
-        homeLayout
+        menuBtn,
+        menuLayout
         // this should contain the html/css layout 
     }
 }

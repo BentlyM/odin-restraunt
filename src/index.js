@@ -5,9 +5,12 @@ import { Init } from './init';
 function component() {
     // this is for switching between 'pages' tho its static
      // possible put each of these in a if statement?
-    if(true){
-        new Init().loadHome();
-    }
+    const switchPage = new Init();
+
+    switchPage.loadHome();
+    switchPage.loadMenu();
+    switchPage.loadAbout();
+    
 }
 
 component();

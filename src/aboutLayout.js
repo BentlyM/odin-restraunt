@@ -1,18 +1,19 @@
-export const aboutComponent = () => {
-    const homeBtn = document.getElementById('about')
+export const AboutComponent = () => {
+    console.log('you reached me')
+    const aboutBtn = document.getElementById('about')
 
-    const homeLayout = document.createElement('div');
-    homeLayout.classList.add('homeContainer');
+    const aboutLayout = document.createElement('div');
+    aboutLayout.classList.add('aboutContainer');
 
     const text = document.createElement('span');
-    text.textContent = 'test1';
+    text.textContent = 'aboutLayout';
     
 
-    homeLayout.appendChild(text);
+    aboutLayout.appendChild(text);
 
     return {
-        homeBtn,
-        homeLayout
+        aboutBtn,
+        aboutLayout
         // this should contain the html/css layout 
     }
 }
