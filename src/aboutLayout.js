@@ -1,5 +1,5 @@
 export const AboutComponent = () => {
-    const aboutBtn = document.getElementById('about')
+    const aboutBtn = document.querySelector('.about')
 
     const aboutLayout = document.createElement('div');
     aboutLayout.classList.add('aboutContainer');

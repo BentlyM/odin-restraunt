@@ -1,5 +1,5 @@
 export const MenuComponent = () => {
-    const menuBtn = document.getElementById('menu')
+    const menuBtn = document.querySelector('.menu')
 
     const menuLayout = document.createElement('div');
     menuLayout.classList.add('menuContainer');

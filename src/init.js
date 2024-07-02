@@ -15,10 +15,12 @@ export class Init {
 
         for(let list of this.choice){
             list.addEventListener('click',(event)=>{
-                if(event.target.innerText === 'About'){
+                if(event.target.classList.contains('about')){
+                    console.log(event.target.classList.contains('about'));
                     AboutComponent().aboutBtn.addEventListener('click', AboutComponent);
                    this.contentContainer.replaceChild(AboutComponent().aboutLayout, this.contentContainer.childNodes[0]);
-                }else if(event.target.innerText === 'Menu'){
+                }else if(event.target.classList.contains('menu')){
+                    console.log(event.target.classList.contains('menu'));
                     MenuComponent().menuBtn.addEventListener('click', MenuComponent);
                     this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
                 }else{
