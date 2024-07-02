@@ -11,4 +11,7 @@ how will you render the specific layouts?:
   - use the init.js to load each page when event is called
   - use index.js to .remove() nodes regrading the particular page (just a recommendation ) there are other ways
 
+
+idea:
+  - use a singular function to dynamically figure out the button pressed triggering a closest method to activate that alters page layouts 
   

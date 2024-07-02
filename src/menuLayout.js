@@ -7,7 +7,6 @@ export const MenuComponent = () => {
     const text = document.createElement('span');
     text.textContent = 'MenuLayout';
     
-
     menuLayout.appendChild(text);
 
     return {

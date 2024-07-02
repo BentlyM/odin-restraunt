@@ -6,21 +6,27 @@ import { AboutComponent } from "./aboutLayout";
 
 export class Init {
     constructor(){
+        this.choice = document.querySelectorAll('li');
         this.contentContainer = document.getElementById('content');
     }
 
-    loadHome(){
-        HomeComponent().homeBtn.addEventListener('click', HomeComponent);
-        this.contentContainer.appendChild(HomeComponent().homeLayout)
+    load(){
+        this.contentContainer.appendChild(HomeComponent().homeLayout);
+
+        for(let list of this.choice){
+            list.addEventListener('click',(event)=>{
+                if(event.target.innerText === 'About'){
+                    AboutComponent().aboutBtn.addEventListener('click', AboutComponent);
+                   this.contentContainer.replaceChild(AboutComponent().aboutLayout, this.contentContainer.childNodes[0]);
+                }else if(event.target.innerText === 'Home'){
+                    MenuComponent().menuBtn.addEventListener('click', MenuComponent);
+                    this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
+                }else{
+                    HomeComponent().homeBtn.addEventListener('click', HomeComponent);
+                    this.contentContainer.replaceChild(HomeComponent().homeLayout, this.contentContainer.childNodes[0]);
+                }
+            })
+        }
     }
 
-    loadMenu(){
-        MenuComponent().menuBtn.addEventListener('click', MenuComponent);
-        this.contentContainer.appendChild(MenuComponent().menuLayout)
-    }
-
-    loadAbout(){
-        AboutComponent().aboutBtn.addEventListener('click', AboutComponent);
-        this.contentContainer.appendChild(AboutComponent().aboutLayout);
-    }
 }
