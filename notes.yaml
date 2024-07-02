@@ -8,4 +8,7 @@ method 2:
 
 how will you render the specific layouts?:
   - separate javascript for each layout homeLayout , menuLayout , contactLayout
-  - appending html 
+  - use the init.js to load each page when event is called
+  - use index.js to .remove() nodes regrading the particular page (just a recommendation ) there are other ways
+
+  

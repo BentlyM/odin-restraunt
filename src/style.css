@@ -51,3 +51,7 @@ button:active {
 #title {
     order: 1;
 }
+
+.show {
+    display: block;
+}
