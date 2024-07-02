@@ -20,10 +20,11 @@ export class Init {
                    this.contentContainer.replaceChild(AboutComponent().aboutLayout, this.contentContainer.childNodes[0]);
                 }else if(event.target.innerText === 'Home'){
                     MenuComponent().menuBtn.addEventListener('click', MenuComponent);
-                    this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
+                    this.contentContainer.replaceChild(HomeComponent().homeLayout, this.contentContainer.childNodes[0]);
                 }else{
                     HomeComponent().homeBtn.addEventListener('click', HomeComponent);
-                    this.contentContainer.replaceChild(HomeComponent().homeLayout, this.contentContainer.childNodes[0]);
+                    this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
+
                 }
             })
         }
