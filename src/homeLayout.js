@@ -17,7 +17,7 @@ export const HomeComponent = () => {
 
     /*paragraph*/
     const paragraph = document.createElement('p');
-    paragraph.textContent = 'Anyone who gets in my way is my enemy! Our food is so good, it will make you forget about those other wannabe restaurants. Chaos Control your taste buds to the best meal they have ever had.'
+    paragraph.textContent = 'Anyone who gets in my way is my enemy! Our pastries are so good, it will make you forget about those other wannabe restaurants. Chaos Control your taste buds to the best pastries they have ever had.'
     paragraph.style.textAlign = 'center';
     paragraph.style.width = "500px";
 
@@ -28,6 +28,5 @@ export const HomeComponent = () => {
     return {
         homeBtn,
         homeLayout
-        // this should contain the html/css layout 
     }
 }

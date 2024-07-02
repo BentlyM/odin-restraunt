@@ -20,12 +20,12 @@ export class Init {
                     AboutComponent().aboutBtn.addEventListener('click', AboutComponent);
                    this.contentContainer.replaceChild(AboutComponent().aboutLayout, this.contentContainer.childNodes[0]);
                 }else if(event.target.classList.contains('menu')){
-                    console.log(event.target.classList.contains('menu'));
+                    console.log(event.target);
                     MenuComponent().menuBtn.addEventListener('click', MenuComponent);
-                    this.contentContainer.replaceChild(HomeComponent().homeLayout, this.contentContainer.childNodes[0]);
+                    this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
                 }else{
                     HomeComponent().homeBtn.addEventListener('click', HomeComponent);
-                    this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
+                    this.contentContainer.replaceChild(HomeComponent().homeLayout, this.contentContainer.childNodes[0]);
 
                 }
             })

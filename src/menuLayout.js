@@ -55,7 +55,7 @@ export const MenuComponent = () => {
         name: 'Shadow\'s Signature Croissant',
         description: 'Flaky, buttery, and utterly divine',
         price: '$4.99',
-        category: 'Sweet Treats',
+        category: 'Chaos Treats',
     },
     {
         name: 'Strawberry Shortcake',
