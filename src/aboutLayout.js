@@ -5,7 +5,7 @@ export const AboutComponent = () => {
     aboutLayout.classList.add('aboutContainer');
 
     const text = document.createElement('span');
-    text.textContent = 'aboutLayout';
+    text.textContent = 'AboutLayout';
 
     aboutLayout.appendChild(text);
 
