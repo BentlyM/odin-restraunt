@@ -4,6 +4,8 @@ body {
     height: 100vh;
 }
 
+/* navigation bar */
+
 header {
     display: flex;
     justify-content: center;
@@ -53,6 +55,15 @@ button:active {
     order: 1;
 }
 
-.show {
-    display: block;
+/* content warp */
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Home Layout */
+
+.homeContainer {
+
 }
