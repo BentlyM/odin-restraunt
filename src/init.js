@@ -18,7 +18,7 @@ export class Init {
                 if(event.target.innerText === 'About'){
                     AboutComponent().aboutBtn.addEventListener('click', AboutComponent);
                    this.contentContainer.replaceChild(AboutComponent().aboutLayout, this.contentContainer.childNodes[0]);
-                }else if(event.target.innerText === 'Home'){
+                }else if(event.target.innerText === 'Menu'){
                     MenuComponent().menuBtn.addEventListener('click', MenuComponent);
                     this.contentContainer.replaceChild(MenuComponent().menuLayout, this.contentContainer.childNodes[0]);
                 }else{
